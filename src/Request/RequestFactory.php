@@ -89,9 +89,6 @@ class RequestFactory implements RequestFactoryInterface
             'headers' => [
                 'Authorization' => $this->authorizationHeader->forTokenCredentials($temporaryCredentials, $verificationCode),
             ],
-            'form_params' => [
-                'oauth_verifier' => $verificationCode,
-            ],
         ]);
     }
 
